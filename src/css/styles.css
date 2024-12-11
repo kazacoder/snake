@@ -1,0 +1,59 @@
+canvas {
+    background-color: green;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.score {
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+.button {
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.controls {
+    margin-top: 20px;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#up, #down {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#left, #right {
+    padding-left: 11px;
+}
+
+.control-button {
+    content: '';
+    width: 50px;
+    height: 50px;
+    /*padding: 0;*/
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    background-color: #2dcf22;
+}
+
+@media screen and (max-width: 768px) {
+    .controls {
+        display: grid;
+    }
+}
